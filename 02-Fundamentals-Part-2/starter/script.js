@@ -44,17 +44,4 @@ console.log(foodProcessor(5, 0));
 const appleOrangeJuice = foodProcessor(2, 4);
 console.log(appleOrangeJuice);
 
-
-function fruitSelection(bananas, apples) {
-  const selection = Number(
-    prompt(
-      `How many bananas? ${bananas}` +
-        Number(prompt)`How many apples? ${apples}`
-    )
-  );
-  console.log(`I am using `);
-  return juice;
-}
-
-fruitSelection;
 */
