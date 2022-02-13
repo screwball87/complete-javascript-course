@@ -367,7 +367,7 @@ HINT: To calculate 20% of a value, simply multiply it by 20/100 = 0.2
 HINT: Value X is between 50 and 300, if it's >= 50 && <= 300 😉
 
 GOOD LUCK 😀
-*/
+
 const bill = Number(prompt("How much is the bill?"));
 console.log(`I need to tip ${bill >= 50 && bill <= 300 ? "15%" : "20%"}`);
 const totalBill =
@@ -380,3 +380,10 @@ const totalTip =
     ? `Total tip is ${(bill * 15) / 100}`
     : `Total tip is ${(bill * 20) / 100}`;
 console.log(totalTip);
+
+const bill = Number(prompt("How much is the bill?"));
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(
+  `The bill is ${bill}, the tip is ${tip} and the total amount is ${bill + tip}`
+);
+*/
