@@ -44,4 +44,37 @@ console.log(foodProcessor(5, 0));
 const appleOrangeJuice = foodProcessor(2, 4);
 console.log(appleOrangeJuice);
 
+// function declaration
+function calcAge(birthYear) {
+  return 2037 - birthYear;
+}
+
+const age1 = calcAge(1991);
+console.log(age1);
+//const age2 = calcAge(Number(prompt("what year were you born?")));
+//console.log(age2);
+
+
+
+const age3 = calcAge2(2022);
+console.log(age1, age3);
+
+
+// function expression
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+//function arrow
 */
+const calcAge3 = (birthYear) => 2037 - birthYear;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear) => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  return retirement;
+};
+
+console.log(yearsUntilRetirement(1991));
