@@ -159,3 +159,5 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 
 checkWinner(scoreDolphins, scoreKoalas);
 */
+const friends = ["Michael", "Peter", "John"];
+console.log(typeof friends);
