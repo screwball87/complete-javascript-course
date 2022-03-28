@@ -160,4 +160,14 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 checkWinner(scoreDolphins, scoreKoalas);
 */
 const friends = ["Michael", "Peter", "John"];
-console.log(typeof friends);
+console.log(friends);
+
+const years = new Array(1991, 1998, 2002, 2022);
+console.log(friends[friends.length - 3]);
+
+friends[2] = "Jay";
+console.log(friends);
+
+const firstName = "Jonas";
+const jonas = [firstName, "Schmedtmann", 2037 - 1991, "teacher", friends];
+console.log(jonas);
