@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
 ///////////////////////////////////////
@@ -257,6 +257,16 @@ HINT: Remember that an array needs a value in each position, and that value can 
 GOOD LUCK 😀
 */
 
+// const calcTip = function (bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// };
+
+// const bills = [125, 555, 44];
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+// console.log(bills, tips, totals);
+
 /*
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
@@ -381,6 +391,47 @@ TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 
 GOOD LUCK 😀
 */
+
+// const mark = {
+//   fullName: "Mark Miller",
+//   mass: 85,
+//   height: 1.88,
+
+//   calcBMI: function () {
+//     const bmi = this.mass / this.height ** 2;
+//     return `${this.fullName} has a BMI of ${this.bmi}`;
+//   },
+
+//   getSummary: function () {
+//     return `${this.fullName} is ${this.mass} Kgs with a height of ${this.height} metres. His BMI is ${this.calcBMI.bmi}`;
+//   },
+// };
+
+// const john = {
+//   fullName: "John Smith",
+//   mass: 75,
+//   height: 1.99,
+
+//   calcBMI: function () {
+//     const bmi = this.mass / this.height ** 2;
+//     return `${this.fullName} has a BMI of ${this.bmi}`;
+//   },
+
+//   getSummary: function () {
+//     return `${this.fullName} is ${this.mass} Kgs with a height of ${this.height} metres. His BMI is ${this.calcBMI.bmi}`;
+//   },
+// };
+
+// console.log(mark.getSummary());
+// console.log(john.getSummary());
+
+// if (mark.bmi > john.bmi) {
+//   return `Mark Miller's BMI (${mark.bmi}) is higher than John Smiths's (${john.bmi})!`;
+// } else if (john.bmi > mark.bmi) {
+//   if (mark.bmi > john.bmi) {
+//     return `John Smith's BMI (${john.bmi}) is higher than Mark Millers's (${mark.bmi})!`;
+//   }
+// }
 
 /*
 const mark = {
@@ -548,7 +599,7 @@ Let's improve Steven's tip calculator even more, this time using loops!
 2. Create empty arrays for the tips and the totals ('tips' and 'totals')
 3. Use the 'calcTip' function we wrote before (no need to repeat) to calculate tips and total values (bill + tip) for every bill value in the bills array. Use a for loop to perform the 10 calculations!
 
-TEST DATA: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
+TEST DATA: 22, 295, 176, 440, 37, 105, 10, 1100, 86, 52
 
 HINT: Call calcTip in the loop and use the push method to add values to the tips and totals arrays 😉
 
@@ -559,6 +610,24 @@ HINT: Call calcTip in the loop and use the push method to add values to the tips
 
 GOOD LUCK 😀
 */
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+const tips = [];
+
+const totals = [];
+
+const calcTip = function (bills) {
+  return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
+};
+
+for (let i = 0; i <= bills.length; i++) {
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(tip + bills[i]);
+}
+
+console.log(bills, tips, totals);
 
 /*
 const calcTip = function (bill) {

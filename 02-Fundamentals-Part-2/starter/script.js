@@ -1,4 +1,13 @@
 "use strict";
+
+// const howManyBurps = prompt("How many burps have you done?");
+
+// function burp() {
+//   console.log(`I have done ${howManyBurps} burps today`);
+// }
+
+// burp();
+
 /*
 let hasDriversLicence = false;
 const passTest = true;
@@ -29,6 +38,8 @@ function logger() {
 logger();
 logger();
 logger();
+
+
 
 
 function foodProcessor(apples, oranges) {
@@ -158,16 +169,66 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 };
 
 checkWinner(scoreDolphins, scoreKoalas);
-*/
-const friends = ["Michael", "Peter", "John"];
-console.log(friends);
+// */
+// const friends = ["Michael", "Peter", "John"];
+// console.log(friends);
 
-const years = new Array(1991, 1998, 2002, 2022);
-console.log(friends[friends.length - 3]);
+// const years = new Array(1991, 1998, 2002, 2022);
+// console.log(friends[friends.length - 3]);
 
-friends[2] = "Jay";
-console.log(friends);
+// friends[2] = "Jay";
+// console.log(friends);
 
-const firstName = "Jonas";
-const jonas = [firstName, "Schmedtmann", 2037 - 1991, "teacher", friends];
-console.log(jonas);
+// const firstName = "Jonas";
+// const jonas = [firstName, "Schmedtmann", 2037 - 1991, "teacher", friends];
+// console.log(jonas);
+
+// const bastards = new Array("Jimmy", "Michael", "Gerry");
+
+// console.log(bastards);
+
+// console.log(bastards.length);
+
+// function calcAge(birthYear) {
+//   return 2037 - birthYear;
+// }
+
+// const years = [25, 40, 35, 60, 37];
+
+// console.log(calcAge(years[2]));
+
+// const bastards = new Array("Jimmy", "Michael", "Gerry");
+// bastards.push("Ham");
+// bastards.unshift("Bazz");
+// bastards.pop();
+// console.log(bastards.indexOf("Bazz"));
+
+// const scott = {
+//   firstName: "Scott",
+//   lastName: "Alexander",
+//   job: "cuckold",
+//   birthYear: 1991,
+//   hasDriversLicence: true,
+//   age: function () {
+//     return this.age - this.birthYear;
+//   },
+
+//   getSummary: function () {
+//     return `I am ${this.firstName} ${this.lastName}. I am a ${
+//       this.job
+//     } and I am ${this.age}. I have ${
+//       this.hasDriversLicence ? "a" : "no"
+//     } drivers licence`;
+//   },
+// };
+
+// console.log(scott.getSummary());
+
+// const numbers = [15, 25, 45];
+
+// for (let i = 0; i <= numbers.length; i++) {
+//   console.log(`I am ${numbers.i}`) < numbers;
+// }
+
+let dice = Math.floor(Math.random() * 6);
+console.log(dice);
